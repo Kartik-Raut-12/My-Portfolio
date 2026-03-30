@@ -22,6 +22,10 @@ const MENU_LINKS = [
         url: '/#about-me',
     },
     {
+        name: 'Education',
+        url: '/#my-education',
+    },
+    {
         name: 'Experience',
         url: '/#my-experience',
     },

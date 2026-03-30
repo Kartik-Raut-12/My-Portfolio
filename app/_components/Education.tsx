@@ -1,6 +1,6 @@
 'use client';
 import SectionTitle from '@/components/SectionTitle';
-import { MY_EXPERIENCE } from '@/lib/data';
+import { EDUCATION } from '@/lib/data';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
@@ -8,7 +8,7 @@ import { useRef } from 'react';
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
-const Experiences = () => {
+const Education = () => {
     const containerRef = useRef<HTMLDivElement>(null);
 
     useGSAP(
@@ -23,7 +23,7 @@ const Experiences = () => {
                 },
             });
 
-            tl.from('.experience-item', {
+            tl.from('.education-item', {
                 y: 50,
                 opacity: 0,
                 stagger: 0.3,
@@ -52,30 +52,29 @@ const Experiences = () => {
     );
 
     return (
-        <section className="py-section" id="my-experience">
+        <section className="py-section" id="my-education">
             <div className="container" ref={containerRef}>
-                <SectionTitle title="My Experience" />
+                <SectionTitle title="Education" />
 
                 <div className="grid gap-14">
-                    {MY_EXPERIENCE.map((item) => (
-                        <div key={item.title} className="experience-item">
+                    {EDUCATION.map((item) => (
+                        <div key={item.institution} className="education-item">
                             <div className="flex justify-between items-start gap-4 flex-wrap">
-                                <div>
-                                    <p className="text-xl text-muted-foreground">
-                                        {item.company}
+                                <div className="max-w-[800px]">
+                                    <p className="text-xl text-muted-foreground uppercase tracking-widest">
+                                        {item.degree}
                                     </p>
-                                    <p className="text-5xl font-anton leading-none mt-3.5 mb-2.5">
-                                        {item.title}
+                                    <p className="text-4xl md:text-5xl font-anton leading-[1.1] mt-3.5 mb-2.5">
+                                        {item.institution}
                                     </p>
-                                    <p className="text-lg text-muted-foreground">
-                                        {item.duration}
-                                    </p>
+                                    <div className="flex gap-4 text-lg text-muted-foreground flex-wrap">
+                                        <span>{item.duration}</span>
+                                        <span className="text-primary font-bold">{item.grade}</span>
+                                    </div>
                                 </div>
-                                {(item as any).location && (
-                                    <p className="text-muted-foreground text-lg">
-                                        {(item as any).location}
-                                    </p>
-                                )}
+                                <p className="text-muted-foreground text-lg italic">
+                                    {item.location}
+                                </p>
                             </div>
                         </div>
                     ))}
@@ -85,4 +84,4 @@ const Experiences = () => {
     );
 };
 
-export default Experiences;
+export default Education;
