@@ -2,7 +2,7 @@
 
 Welcome to my personal portfolio repository! This project showcases my journey, skills, and the projects I've built as a Full-Stack Developer.
 
-![My Portfolio](https://kartik-raut-portfolio.vercel.app/)
+[My Portfolio](https://kartik-raut-portfolio.vercel.app/)
 
 ## 👤 About Me
 I am a passionate **MERN Stack Developer** dedicated to building performant, accessible, and visually stunning web applications. I specialize in the **MongoDB, Express.js, React, and Node.js** stack, with a strong foundation in both SQL (**MySQL**) and NoSQL databases. I love working with modern technologies like **Next.js and GSAP** to create interactive user experiences.
