@@ -1,5 +1,11 @@
 export const MY_EXPERIENCE = [
     {
+        title: 'Full Stack Developer',
+        company: 'Digital Heroes',
+        duration: 'April - June 2026',
+        location: 'Remote',
+    },
+    {
         title: 'MERN Stack Developer Intern',
         company: 'Royals Webtech Pvt. Ltd.',
         duration: 'Aug 2025 - Jan 2026',

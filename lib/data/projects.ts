@@ -36,6 +36,37 @@ export const PROJECTS: IProject[] = [
         ],
     },
     {
+        title: 'Golf Charity Platform',
+        slug: 'golf-charity-platform',
+        liveUrl: 'https://golf-charity-platform-ruby.vercel.app/',
+        year: 2026,
+        description: `
+      Engineered a premium, full-stack subscription-based platform using React and Node.js, featuring an automated intelligent draw system for tiered user entries. <br/><br/>
+      
+      Key Features:<br/>
+      <ul>
+        <li>⚙️ Secure Backend: Architected with Express.js and Supabase (PostgreSQL) to manage complex business logic and recurring billing.</li>
+        <li>💳 Payment Processing: Integrated Stripe API for robust payment processing.</li>
+        <li>🔒 Security: Supabase Auth with JWT for multi-layered security.</li>
+        <li>🚀 Media Optimization: Cloudinary for optimized media delivery.</li>
+      </ul>
+      `,
+        role: `
+      Full-Stack Developer <br/>
+      <ul>
+        <li>Designed a high-fidelity, responsive UI/UX utilizing Tailwind CSS and Framer Motion.</li>
+        <li>Delivered a modern and highly engaging user experience.</li>
+      </ul>
+      `,
+        techStack: ['React', 'Node.js', 'Express.js', 'Supabase', 'PostgreSQL', 'Stripe', 'Tailwind CSS', 'Framer Motion', 'Cloudinary'],
+        thumbnail: '/projects/golf-charity/public-page-1.png',
+        longThumbnail: '/projects/golf-charity/public-page-1.png',
+        images: [
+            '/projects/golf-charity/public-page-1.png',
+            '/projects/golf-charity/public-page-2.png',
+        ],
+    },
+    {
         title: 'IdeaSphere: Ai Powered project topic finder',
         slug: 'ai-topic-finder',
         liveUrl: '',
